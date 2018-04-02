@@ -1,10 +1,9 @@
-from bottle import Bottle, run
+from bottle import get, run
 
-app = Bottle()
-
-@app.route('/index')
+@get('/index')
 def index():
     return "Welcome to CMPS 183!"
 
-run(app, host='localhost', port=8080)
+
+run(host='localhost', port=8080)
 
