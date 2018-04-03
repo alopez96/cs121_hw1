@@ -14,10 +14,9 @@ def greet(name):
     return dict(name=name)
 
 # Our cat web page
-@view('cats_template')
-@route('/cats/<name>')
-def cats(name):
-    return dict(cats='chi')
+@get('/cats')
+def cats():
+    return template('cats_template')
 
 # Let's add some code to serve jpg images from our static images directory.
 @route('/images/<filename:re:.*\.jpg>')
