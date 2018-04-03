@@ -13,6 +13,11 @@ def greet(name):
 def greet(name):
     return dict(name=name)
 
+# Our cat web page
+@get('/cats')
+def cats():
+    return template('cats_template')
+
 # Let's add some code to serve jpg images from our static images directory.
 @route('/images/<filename:re:.*\.jpg>')
 def serve_image(filename):
@@ -22,6 +27,7 @@ def serve_image(filename):
 @route('/css/<filename:re:.*.css>')
 def serve_css(filename):
     return static_file(filename, root='css', mimetype='text/css')
+
 
 run(reloader=True, host='localhost', port=8080)
 
