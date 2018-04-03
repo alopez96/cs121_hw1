@@ -18,5 +18,10 @@ def greet(name):
 def serve_image(filename):
     return static_file(filename, root='images', mimetype='image/jpg')
 
+# Code for serving css stylesheets from /css directory.
+@route('/css/<filename:re:.*.css>')
+def serve_css(filename):
+    return static_file(filename, root='css', mimetype='text/css')
+
 run(reloader=True, host='localhost', port=8080)
 
