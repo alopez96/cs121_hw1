@@ -15,6 +15,13 @@
       </div>
     </div>
 
+    <div class="cat_card container">
+      <div class="third"><img src="/images/chi_thinking.jpg"/></div>
+      <div class="twothirds cat_description">
+        This is a pensive Chi.  He is looking at you as if he's wanting you to do something for him,
+        or explain to him the meaning of cat life -- or perhaps, simply to cuddle him a bit.
+      </div>
+    </div>
 
   </div>
 
