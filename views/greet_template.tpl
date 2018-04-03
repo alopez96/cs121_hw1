@@ -1,4 +1,5 @@
-<h1>Hello, {{name}}!</h1>
+<h1>Hi, {{name}}!</h1>
 
-<p>I hope that you are enjoying the class so far!</p>
+<img src="/images/chi0.jpg" />
+
 
