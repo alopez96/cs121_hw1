@@ -1,4 +1,4 @@
-from bottle import get, run, template, view
+from bottle import get, route, run, template, view, static_file
 
 @get('/index')
 def index():
@@ -12,6 +12,11 @@ def greet(name):
 @get('/sayhi/<name>')
 def greet(name):
     return dict(name=name)
+
+# Let's add some code to serve jpg images from our static images directory.
+@route('/images/<filename:re:.*\.jpg>')
+def serve_image(filename):
+    return static_file(filename, root='images', mimetype='image/jpg')
 
 run(reloader=True, host='localhost', port=8080)
 
