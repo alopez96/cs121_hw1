@@ -1,0 +1,59 @@
+.news_image{
+	width: 100%;
+} 
+
+div.container div.filler{
+	width: 100%;
+	height: 100px;
+	background-color: #00080;
+}
+
+div.image_container{
+  width: 100%;
+}
+
+#polar{
+	padding: 5px;
+	width: 100%;
+}
+
+#hack{
+	padding: 5px;
+	width:100%;
+}
+
+#wall{
+	padding: 5px;
+	width: 100%;
+}
+
+#okinawa{
+	padding: 5px;
+	width: 100%;
+}
+
+#man{
+	padding: 5px;
+	width: 100%;
+}
+
+#maitra{
+	width: 100%;
+	padding-top: 11%;
+	padding-bottom: 11%;
+	background-color: #d80b8c;
+}
+
+div.container div.pic_float_left{
+	float: left;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	padding: 1px;
+}
+
+.maitra_size{
+	height: 19%; 
+	width: 95%; 
+}
